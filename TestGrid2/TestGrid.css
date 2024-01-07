@@ -1,0 +1,37 @@
+body {
+    background-color: #d4d4d4;
+    font-family: Arial, sans-serif;
+}
+
+div {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+
+    /* Forma sabrosona de hacer responsive imagenes */
+    /* auto-fill rellena los espacios correctamente */
+    /* auto-fit ajusta las imágenes a grandes si solo hay un elemento. */
+
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 16px;
+    max-width: 1500px; /* Esto se puede modificar para ajustar el tamaño respònsivo */
+    margin: 0 auto;
+}
+
+/* Forma arcáica de hacer responsive con GRID */
+/* @media (width > 300px){
+    div{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (width > 600px){
+    div{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+} */
+
+img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto ;
+}

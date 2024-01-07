@@ -1,0 +1,47 @@
+body {    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: gainsboro;
+}
+
+.seccion1{
+    background: salmon;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: grid; /* Declaración GRID */
+    /* GRID se adapta de acuerdo al contenido del div */
+    /* grid-template-columns: auto auto auto auto; */
+    /* grid-template-columns: 50%; */ 
+    /* grid-template-columns: 15vw; */
+    /* grid-template-columns: min-content auto; */
+
+    /* Medida de propio GRID = fr */
+    /* grid-template-columns: 1fr 2fr; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* grid-template-columns: 400px  1fr 400px; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-rows: 100px 75px 50px 25px 100px 200px 25px; */
+    /* grid-template-rows: 100px; */
+    
+    /* El auto-rows agrega a todas las columnas el tamaño de 50px por defecto */
+    /* grid-auto-rows: 50px; 
+
+    /* USANDO REPEAT */
+    grid-template-columns: repeat(3, 150px);
+    /* grid-template-rows: repeat(3, 100px); */
+    grid-auto-rows: 50px;
+    gap: 4px;
+    padding: 4px;
+    height: 400px;
+    width: 700px;
+    place-content: center;
+}
+
+.seccion1 div {
+    background: lightblue;
+    border: 2px solid blue;
+    border-radius: 6px;
+}
+
+
+
+

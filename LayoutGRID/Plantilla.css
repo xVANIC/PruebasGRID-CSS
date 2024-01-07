@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    background-color: #d4d4d4;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-rows: 35px 1fr 100px;
+    min-height: 100vh;
+    grid-template-areas:
+        "header header header"
+        "sidebar . content" /* El punto es un espacio vacío */
+        "footer footer footer"
+}
+
+@media (width < 400px) {
+    .container {
+        grid-template-areas:
+            "header header sidebar"
+            "content content content"
+            "footer footer footer"
+    }
+}
+
+.container header {
+    background: blue;
+    grid-area: header;
+}
+
+.container aside {
+    background: yellow;
+    grid-area: sidebar;
+}
+
+.container main {
+    background: red;
+    grid-area: content;
+}
+
+.container footer {
+    background: gray;
+    grid-area: footer;
+}
